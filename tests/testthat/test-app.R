@@ -1,3 +1,6 @@
+skip_if_not_installed("curl")
+library(curl)
+
 test_that("Basic functionality", {
   s1 <- startServer(
     "127.0.0.1",

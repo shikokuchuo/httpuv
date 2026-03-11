@@ -1,3 +1,6 @@
+skip_if_not_installed("curl")
+library(curl)
+
 index_file_content <- raw_file_content(test_path("apps/content/index.html"))
 data_file_content <- raw_file_content(test_path("apps/content/data.txt"))
 subdir_index_file_content <- raw_file_content(test_path(
